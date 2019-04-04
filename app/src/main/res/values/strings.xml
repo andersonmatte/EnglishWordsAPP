@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">EnglishWords</string>
+    <string name="app_name">English Words</string>
+    <string name="information">Tell the word...</string>
+    <string name="button">Search</string>
 </resources>
