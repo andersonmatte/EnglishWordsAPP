@@ -3,17 +3,11 @@ package me.andersonmatte.englishwords.entity;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import io.realm.RealmObject;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.io.Serializable;
 
-@Builder
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Notes extends RealmObject {
+import io.realm.RealmObject;
+
+public class Notes extends RealmObject implements Serializable {
 
     @SerializedName("text")
     @Expose
@@ -22,5 +16,21 @@ public class Notes extends RealmObject {
     @SerializedName("type")
     @Expose
     private String type;
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
 }

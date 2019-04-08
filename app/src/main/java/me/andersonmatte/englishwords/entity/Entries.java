@@ -3,22 +3,23 @@ package me.andersonmatte.englishwords.entity;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+import java.io.Serializable;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Builder
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Entries extends RealmObject {
+public class Entries extends RealmObject implements Serializable {
 
     @SerializedName("senses")
     @Expose
-    private List<Senses> senses;
+    private RealmList<Senses> senses;
+
+    public RealmList<Senses> getSenses() {
+        return senses;
+    }
+
+    public void setSenses(RealmList<Senses> senses) {
+        this.senses = senses;
+    }
 
 }

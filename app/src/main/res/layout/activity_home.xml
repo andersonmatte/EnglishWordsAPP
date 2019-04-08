@@ -7,7 +7,7 @@
     tools:context=".activity.HomeActivity">
 
     <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/word"
+        android:id="@+id/editTextWord"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginStart="56dp"
@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="0.109" />
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/searchWord"
+        android:id="@+id/buttonSearchWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/word"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWord"
         app:layout_constraintVertical_bias="0.256" />
 
 </android.support.constraint.ConstraintLayout>

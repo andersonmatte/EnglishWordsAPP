@@ -2,4 +2,7 @@
     <string name="app_name">English Words</string>
     <string name="information">Tell the word...</string>
     <string name="button">Search</string>
+
+    <string name="errorWordEmpty">Please enter a word.</string>
+    <string name="errorApi">Error fetching service.</string>
 </resources>
