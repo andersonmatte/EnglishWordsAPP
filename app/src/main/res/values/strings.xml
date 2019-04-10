@@ -5,4 +5,5 @@
 
     <string name="errorWordEmpty">Please enter a word.</string>
     <string name="errorApi">Error fetching service.</string>
+    <string name="versionAPP">Version 1.0</string>
 </resources>
