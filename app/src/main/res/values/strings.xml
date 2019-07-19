@@ -3,6 +3,16 @@
     <string name="information">Tell the word...</string>
     <string name="button">Search</string>
 
+    <!--Itens do menu -->
+    <string name="menuHeader">Menu</string>
+    <string name="go">Let\'s study?</string>
+    <string name="abrir">Open</string>
+    <string name="fechar">Close</string>
+    <string name="menuItem1">Word History</string>
+    <string name="menuItem2">Train Words</string>
+    <string name="menuItem3">Discover Words</string>
+    <string name="menuItem4">About APP</string>
+
     <string name="errorWordEmpty">Please enter a word.</string>
     <string name="errorApi">Error fetching service.</string>
     <string name="versionAPP">Version 1.0</string>

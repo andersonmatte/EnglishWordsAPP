@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/nav_historico"
+        android:title="@string/menuItem1"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_history_black_48dp"
+        android:actionLayout="@layout/activity_historico_palavra"/>
+
+    <item android:id="@+id/nav_treinar"
+        android:title="@string/menuItem2"
+        android:icon="@drawable/baseline_fitness_center_black_48dp"
+        app:showAsAction="always"
+        android:actionLayout="@layout/activity_treinar_palavras"/>
+
+    <item android:id="@+id/nav_descobrir"
+        android:title="@string/menuItem3"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_playlist_add_black_48dp"
+        android:actionLayout="@layout/activity_descobrir_palavras"/>
+
+    <item android:id="@+id/nav_sobre"
+        android:title="@string/menuItem4"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_info_black_48dp"
+        android:actionLayout="@layout/activity_sobre"/>
+
+</menu>

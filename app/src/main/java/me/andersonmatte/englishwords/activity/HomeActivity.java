@@ -27,6 +27,12 @@ public class HomeActivity extends AppCompatActivityBase {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.setContentView(R.layout.activity_home);
+    }
+
+  /*  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         editTextWord = (AppCompatEditText) findViewById(R.id.editTextWord);
         AppCompatButton buttonSearchWord = (AppCompatButton) findViewById(R.id.buttonSearchWord);
@@ -58,9 +64,9 @@ public class HomeActivity extends AppCompatActivityBase {
                 }
             }
         });
-    }
+    }*/
 
-    //Valida se o CEP foi preenchido.
+   /* //Valida se o CEP foi preenchido.
     private Boolean validaForm() {
         if (editTextWord.getText().toString().isEmpty()) {
             editTextWord.setError(getResources().getString(R.string.errorWordEmpty));
@@ -68,7 +74,7 @@ public class HomeActivity extends AppCompatActivityBase {
         } else {
             return true;
         }
-    }
+    }*/
 
     @Override
     public void onBackPressed() {
