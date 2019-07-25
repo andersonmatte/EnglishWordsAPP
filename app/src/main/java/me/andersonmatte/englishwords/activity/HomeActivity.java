@@ -2,23 +2,10 @@ package me.andersonmatte.englishwords.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatEditText;
-import android.util.Log;
-import android.view.View;
-
-import java.io.Serializable;
 
 import me.andersonmatte.englishwords.R;
-import me.andersonmatte.englishwords.api.OxfordDictionaryAPI;
 import me.andersonmatte.englishwords.base.AppCompatActivityBase;
-import me.andersonmatte.englishwords.entity.Result;
-import me.andersonmatte.englishwords.entity.Word;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-import static me.andersonmatte.englishwords.R.string.errorApi;
 
 public class HomeActivity extends AppCompatActivityBase {
 

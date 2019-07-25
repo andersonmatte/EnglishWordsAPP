@@ -6,7 +6,8 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 import io.realm.RealmObject;
-public class Pronunciations extends RealmObject implements Serializable{
+
+public class Pronunciations extends RealmObject implements Serializable {
 
     @SerializedName("audioFile")
     @Expose

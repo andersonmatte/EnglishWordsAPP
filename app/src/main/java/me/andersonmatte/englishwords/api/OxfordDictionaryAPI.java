@@ -10,7 +10,7 @@ import retrofit2.http.Path;
 
 public interface OxfordDictionaryAPI {
 
-    public static final Retrofit retrofit =  new Retrofit.Builder()
+    public static final Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("https://od-api.oxforddictionaries.com")
             .addConverterFactory(GsonConverterFactory.create())
             .build();

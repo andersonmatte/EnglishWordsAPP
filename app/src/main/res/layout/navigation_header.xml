@@ -11,13 +11,13 @@
         android:id="@+id/nome_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:textSize="20sp"
         android:scaleType="fitXY"
         android:text="@string/menuHeader"
-        android:textColor="#FFF"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -32,7 +32,7 @@
         android:layout_marginBottom="8dp"
         android:scaleType="fitEnd"
         android:text="@string/go"
-        android:textColor="#FFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,10 +43,10 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_alignLeft="@+id/nome_menu"
-        android:tint="#FFFFFF"
         android:src="@drawable/ic_english_receptionist"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
 
 </android.support.constraint.ConstraintLayout>

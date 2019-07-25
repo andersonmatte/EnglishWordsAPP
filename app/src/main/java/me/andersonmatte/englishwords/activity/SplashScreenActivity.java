@@ -17,8 +17,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.rotate_move_down);
-        ImageView imageView = (ImageView)findViewById(R.id.imageLogo);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.rotate_move_down);
+        ImageView imageView = (ImageView) findViewById(R.id.imageLogo);
         imageView.startAnimation(animation);
         //Controla o tempo de exibição da Splash Screen.
         Handler handle = new Handler();
