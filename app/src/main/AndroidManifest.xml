@@ -4,17 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_foreground"
+        android:icon="@drawable/ic_english_receptionist"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_english_receptionist"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.DescobrirPalavrasActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".activity.SobreActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".activity.TreinarPalavrasActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".activity.HistoricoPalavraActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.SplashScreenActivity"
+            android:name=".activity.OnBoardingActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activity.DescobrirPalavrasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SobreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TreinarPalavrasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HistoricoPalavraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.HomeActivity"
             android:screenOrientation="portrait" />
