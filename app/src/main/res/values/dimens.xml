@@ -8,7 +8,7 @@
     <dimen name="ob_header_top_margin">50dp</dimen>
 
     <dimen name="ob_desc_padding">30dp</dimen>
-    <dimen name="ob_banner_height">300dp</dimen>
+    <dimen name="ob_banner_height">170dp</dimen>
     <dimen name="items_inbetween">8dp</dimen>
 
     <dimen name="button_text">18sp</dimen>

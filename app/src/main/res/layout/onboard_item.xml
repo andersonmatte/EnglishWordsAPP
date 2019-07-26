@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/item_gradient">
 
     <ImageView
         android:layout_marginTop="10dp"
@@ -22,11 +23,12 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            tools:ignore="UselessParent">
+            android:layout_height="200dp"
+            tools:ignore="UselessParent"
+            android:background="@drawable/item_gradient">
 
             <TextView
                 android:id="@+id/tv_header"
@@ -44,7 +46,7 @@
                 android:id="@+id/tv_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:paddingLeft="@dimen/ob_desc_padding"
                 android:paddingRight="@dimen/ob_desc_padding"
