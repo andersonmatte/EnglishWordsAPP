@@ -3,18 +3,61 @@ package me.andersonmatte.englishwords.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import me.andersonmatte.englishwords.R;
 import me.andersonmatte.englishwords.base.AppCompatActivityBase;
+import me.andersonmatte.englishwords.entity.Palavra;
 
 public class HomeActivity extends AppCompatActivityBase {
 
     private AppCompatEditText editTextWord;
+    private AppCompatEditText editTextTraducao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_home);
+        editTextWord = (AppCompatEditText) findViewById(R.id.editTextWord);
+        editTextTraducao = (AppCompatEditText) findViewById(R.id.editTraducao);
+        Button buttonSalvar = (Button) findViewById(R.id.botaoSalvar);
+        buttonSalvar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (validaForm()) {
+                    salvar();
+                }
+            }
+        });
+    }
+
+    //Valida os campos na tela.
+    private Boolean validaForm() {
+        if (editTextWord.getText().toString().isEmpty()) {
+            editTextWord.setError(getResources().getString(R.string.erro_wordInvalido));
+            return false;
+        } else if (editTextTraducao.getText().toString().isEmpty()) {
+            editTextTraducao.setError(getResources().getString(R.string.erro_traducaoInvalido));
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    //Salva o objeto no Banco,
+    public void salvar() {
+        super.realm.beginTransaction();
+        Palavra palavraSalvar = new Palavra();
+        palavraSalvar.setConteudo(this.editTextWord.getText().toString());
+        palavraSalvar.setTraducao(this.editTextTraducao.getText().toString());
+        super.realm.insertOrUpdate(palavraSalvar);
+        super.realm.commitTransaction();
+        Toast toast = (Toast) Toast.makeText(getApplicationContext(), R.string.mensageSave, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL, 10, 10);
+        toast.show();
     }
 
   /*  @Override

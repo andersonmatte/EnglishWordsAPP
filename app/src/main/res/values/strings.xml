@@ -33,5 +33,11 @@
     <string name="sobre_1">The English Words App is designed to be a student aid tool for English.</string>
     <string name="sobre_2">O App English Words, foi idealizado para ser uma ferramenta de ajuda ao estudante do Inglês.</string>
     <string name="version_app_1_0">Version APP 1.0</string>
+    <string name="enter_a_word_insira_uma_palavra">Enter a word / Insira uma palavra</string>
+    <string name="enter_the_translation_insira_a_tradu_o">Enter the translation / Insira a tradução</string>
+    <string name="save">Save / Salvar</string>
+    <string name="erro_wordInvalido">Please fill in the word. / Favor preencher a palavra.</string>
+    <string name="erro_traducaoInvalido">Please fill in the translation. / Favor preencher a tradução.</string>
+    <string name="mensageSave">Saved successfully! / Salvo com sucesso!</string>
 
 </resources>

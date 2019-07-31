@@ -8,11 +8,75 @@
     android:background="@drawable/image_back"
     tools:context=".activity.HomeActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
 
-    </android.support.constraint.ConstraintLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="clip_horizontal"
+            android:textColorHint="@color/black"
+            android:theme="@style/TextLabel"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/editTextWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="clip_horizontal"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:hint="@string/enter_a_word_insira_uma_palavra"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutTraducao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="clip_horizontal"
+            android:textColorHint="@color/black"
+            android:theme="@style/TextLabel"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/editTraducao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="clip_horizontal"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:hint="@string/enter_the_translation_insira_a_tradu_o"
+                android:inputType="textCapSentences|textAutoCorrect"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:theme="@style/RaisedButton"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/save"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
