@@ -39,5 +39,6 @@
     <string name="erro_wordInvalido">Please fill in the word. / Favor preencher a palavra.</string>
     <string name="erro_traducaoInvalido">Please fill in the translation. / Favor preencher a tradução.</string>
     <string name="mensageSave">Saved successfully! / Salvo com sucesso!</string>
+    <string name="teste">teste</string>
 
 </resources>

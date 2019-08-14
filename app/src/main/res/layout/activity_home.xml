@@ -5,7 +5,8 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_back"
+
+    android:background="@drawable/item_gradient"
     tools:context=".activity.HomeActivity">
 
     <android.support.v7.widget.LinearLayoutCompat

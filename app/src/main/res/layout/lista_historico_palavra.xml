@@ -9,6 +9,8 @@
         android:id="@+id/palavra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/teste"
+        android:textSize="20sp"
         android:layout_margin="8dp"
         android:textColor="@color/black" />
 
@@ -16,6 +18,8 @@
         android:id="@+id/traducao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/teste"
+        android:textSize="20sp"
         android:layout_marginTop="2dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
